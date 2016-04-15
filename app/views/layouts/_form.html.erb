@@ -6,30 +6,30 @@
 					<h1 id="apply-title">申請或洽詢</h1>
 				</div>
 				<div class="col-md-6 no-padding">
-
+					
 					<%= simple_form_for(@info, html: { class: 'form-horizontal' }) do |f| %>
 						<div class="form-group">
 							<%= f.label :name,"姓名：",class:"col-sm-5 control-label" %>
 							<div class="col-sm-6 no-padding">
-								<%= f.input_field :name,class:"form-control" %>
+								<%= f.input :name,class:"form-control", label: false %>
 							</div>
 						</div>
 						<div class="form-group">
 							<%= f.label :number,"電話：",class:"col-sm-5 control-label" %>
 							<div class="col-sm-6 no-padding">
-								<%= f.input_field :number,class:"form-control" %>
+								<%= f.input :number,class:"form-control", label: false %>
 							</div>
 						</div>
 						<div class="form-group">
 							<%= f.label :time,"方便聯絡的時段：",class:"col-sm-5 control-label" %>
 							<div class="col-sm-6 no-padding">
-								<%= f.input_field :time,class:"form-control" %>
+								<%= f.input :time,class:"form-control", label: false %>
 							</div>
 						</div>
 						<div class="form-group">
 							<%= f.label :note,"問題：",class:"col-sm-5 control-label" %>
 							<div class="col-sm-7 no-padding">
-								<%= f.input_field :note,class:"form-control",rows:6 %>
+								<%= f.input :note,class:"form-control",rows:6, label: false %>
 							</div>
 						</div>
 						<div class="form-group">

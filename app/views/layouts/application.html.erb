@@ -10,6 +10,9 @@
 
 	<%= render 'layouts/nav' %>
 	<%= render 'layouts/side_button' %>
+	<% if notice or alert  %>
+		<%= render 'layouts/alert' %>
+	<% end %>
 <%= yield %>
 	
 	<%= render 'layouts/form' %>

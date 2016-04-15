@@ -7,6 +7,7 @@ $lightyellow: #f9ff99;
 $yellow: #f49600;
 $black: #161616;
 $borderblack: #e9eaed;
+$red: #ff5252;
 
 @media (max-width:768px) { 
     #side-button{
@@ -87,6 +88,11 @@ body{
 		background-color: $black;
 		color:white;
 	}
+	&-red{
+		background-color: $red;
+		color:white;
+	}
+
 }
 
 

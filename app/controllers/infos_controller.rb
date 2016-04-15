@@ -7,7 +7,7 @@ class InfosController < ApplicationController
 	        # flash[:notice] = t('.succeed')
 	        redirect_to(:back)
 	    else
-	        # flash[:alert] = t('.empty')
+	        flash[:alert] = "您漏填了某些欄位"
 	        redirect_to(:back)
 	    end
 	end
