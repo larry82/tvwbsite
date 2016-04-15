@@ -1,0 +1,96 @@
+$brown: #fde8b1;
+$darkbrown: #ecdb98;
+$pink: #ffe2f6;
+$lightblue: #e2e8fc;
+$lightgreen: #e3fdf0;
+$lightyellow: #f9ff99;
+$yellow: #f49600;
+$black: #161616;
+$borderblack: #e9eaed;
+
+@media (max-width:768px) { 
+    #side-button{
+		display: none;
+	}
+}
+
+body{
+	font-size: 14px;
+	font-family: Microsoft JhengHei;
+}
+.no-padding{
+	padding:0 !important;
+}
+#nav-border{
+	border-top: 2px solid $darkbrown;
+	border-bottom: 2px solid $darkbrown;
+}
+#nav{
+	font-weight: 700;
+	.col-md-2{
+		padding: 10px;
+	}
+}
+#side-button{
+	position:fixed;
+	right:50px;
+	top: 300px;
+	font-size: 20px;
+	font-weight: 700;
+}
+#footer{
+	font-weight: 700;
+	#footer-nav{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+#form{
+	border-bottom: 2px solid $borderblack;
+	#apply-title{
+		font-size: 42px;
+		font-weight: 700;
+		margin-top:0px;
+	}
+	padding:100px 100px 10px 100px;
+	input[type="text"]{
+		border: 1px solid $black;
+	}
+	textarea{
+		border: 1px solid $black;
+	}
+	.btn-yellow{
+		background-color: $yellow;
+		color:white;
+		&:hover{
+			background-color: lighten($yellow,10%);
+		}
+	}
+}
+.bg{
+	&-brown{
+		background-color: $brown;
+	}
+	&-pink{
+		background-color: $pink;
+	}
+	&-lightblue{
+		background-color: $lightblue;
+	}
+	&-lightgreen{
+		background-color: $lightgreen;
+	}
+	&-lightyellow{
+		background-color: $lightyellow;
+	}
+	&-black{
+		background-color: $black;
+		color:white;
+	}
+}
+
+
+@import 'normalize';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+

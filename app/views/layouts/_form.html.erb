@@ -1,0 +1,53 @@
+<div class="bg-brown">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center" id="form">
+				<div class="col-md-6 test-center">
+					<h1 id="apply-title">申請或洽詢</h1>
+				</div>
+				<div class="col-md-6 no-padding">
+
+					<%= simple_form_for(@info, html: { class: 'form-horizontal' }) do |f| %>
+						<div class="form-group">
+							<%= f.label :name,"姓名：",class:"col-sm-5 control-label" %>
+							<div class="col-sm-6 no-padding">
+								<%= f.input_field :name,class:"form-control" %>
+							</div>
+						</div>
+						<div class="form-group">
+							<%= f.label :number,"電話：",class:"col-sm-5 control-label" %>
+							<div class="col-sm-6 no-padding">
+								<%= f.input_field :number,class:"form-control" %>
+							</div>
+						</div>
+						<div class="form-group">
+							<%= f.label :time,"方便聯絡的時段：",class:"col-sm-5 control-label" %>
+							<div class="col-sm-6 no-padding">
+								<%= f.input_field :time,class:"form-control" %>
+							</div>
+						</div>
+						<div class="form-group">
+							<%= f.label :note,"問題：",class:"col-sm-5 control-label" %>
+							<div class="col-sm-7 no-padding">
+								<%= f.input_field :note,class:"form-control",rows:6 %>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 no-padding text-right">
+								<%= f.submit "送出",class:"btn btn-yellow" %>
+							</div>
+						</div>
+						
+					<% end %>
+
+				</div>
+	<!-- 表單結束 -->
+				<div class="col-md-12 test-center">
+					<a href="#">
+						回頂端
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
