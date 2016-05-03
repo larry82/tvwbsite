@@ -15,7 +15,7 @@
 	<% end %>
 <%= yield %>
 	
-	<%= render 'layouts/form' %>
-	<%= render 'layouts/footer' %>
+	<%= render 'layouts/form' unless params[:action] == "only" %>
+	<%= render 'layouts/footer'  %>
 </body>
 </html>

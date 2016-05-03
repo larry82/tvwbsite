@@ -17,6 +17,7 @@ $red: #ff5252;
 
 body{
 	font-size: 14px;
+	letter-spacing: 1px;
 	font-family: Microsoft JhengHei;
 }
 .no-padding{
@@ -29,7 +30,7 @@ body{
 #nav{
 	font-weight: 700;
 	.col-md-2{
-		padding: 10px;
+		border-left: 1px solid rgba(225,225,225,0.5);
 	}
 }
 #side-button{
@@ -44,18 +45,58 @@ body{
 	#footer-nav{
 		margin-top: 10px;
 		margin-bottom: 10px;
+		a{
+			text-decoration: none;
+			color:black;
+		}
+	}
+	
+}
+
+#title{
+	h1{
+		font-size: 36px;
+		font-weight: 700;
 	}
 }
+
+#content{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#hide-content{
+	display:none;
+	margin-bottom: 20px;
+}
+#hide-btn{
+	display:none;
+}
+
+input[type="text"]{
+	border: 1px solid $black;
+}
+
+#only-form{
+	textarea{
+		border: 1px solid $black;
+	}
+	.btn-yellow{
+		background-color: $yellow;
+		color:white;
+		&:hover{
+			background-color: lighten($yellow,10%);
+		}
+	}
+}
+
+
 #form{
 	border-bottom: 2px solid $borderblack;
+	padding:40px 100px 10px 100px;
 	#apply-title{
 		font-size: 42px;
 		font-weight: 700;
 		margin-top:0px;
-	}
-	padding:100px 100px 10px 100px;
-	input[type="text"]{
-		border: 1px solid $black;
 	}
 	textarea{
 		border: 1px solid $black;
@@ -92,7 +133,6 @@ body{
 		background-color: $red;
 		color:white;
 	}
-
 }
 
 

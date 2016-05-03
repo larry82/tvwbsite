@@ -1,9 +1,9 @@
 class WelcomeController < ApplicationController
 	before_action :set_info
 
-	def index
-		
+	def index	
 	end
+
 
 	private
 

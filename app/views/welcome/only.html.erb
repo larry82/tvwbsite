@@ -1,0 +1,63 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center" id="title">
+			<h1>
+				獨家優惠
+			</h1>
+		</div>
+		<div class="col-md-10 col-md-offset-1 text-center">
+			小提示
+		</div>
+		<div class="col-md-10 col-md-offset-1 text-center">
+			業務代表通常能提供比網站上還低的驚喜價格！<br>
+			趕快詢問他吧！
+		</div>
+		<div class="col-md-4 col-md-offset-2" style="margin-bottom:40px ;">
+			<div class="col-md-12">
+				<%= image_tag "QR.png",width:"250px" %>
+			</div>
+
+			<div class="col-md-12" style="margin-top: 20px;">
+				<%= image_tag "name.png",width:"300px" %>
+			</div>
+		</div>
+
+		<div class="col-md-4" style="margin-top:80px; margin-bottom:400px;" id="only-form">
+					
+			<%= simple_form_for(@info, html: { class: 'form-horizontal' }) do |f| %>
+				<div class="form-group">
+					<%= f.label :name,"姓名：",class:"col-sm-5 control-label" %>
+					<div class="col-sm-6 no-padding">
+						<%= f.input :name,class:"form-control", label: false %>
+					</div>
+				</div>
+				<div class="form-group">
+					<%= f.label :number,"電話：",class:"col-sm-5 control-label" %>
+					<div class="col-sm-6 no-padding">
+						<%= f.input :number,class:"form-control", label: false %>
+					</div>
+				</div>
+				<div class="form-group">
+					<%= f.label :time,"方便聯絡的時段：",class:"col-sm-5 control-label" %>
+					<div class="col-sm-6 no-padding">
+						<%= f.input :time,class:"form-control", label: false %>
+					</div>
+				</div>
+				<div class="form-group">
+					<%= f.label :note,"問題：",class:"col-sm-5 control-label" %>
+					<div class="col-sm-7 no-padding">
+						<%= f.input :note,class:"form-control",rows:6, label: false %>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12 no-padding text-right">
+						<%= f.submit "送出",class:"btn btn-yellow" %>
+					</div>
+				</div>
+			<% end %>
+
+		</div>
+
+
+	</div>
+</div>
