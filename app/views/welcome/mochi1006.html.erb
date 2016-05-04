@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" style="min-height:600px; margin-top:30px;">
+			<% Info.all.each do |i| %>
+				編號：<%= i.id %> |
+				姓名：<%= i.name %> |
+				電話：<%= i.number %> |
+				可聯絡的時間：<%= i.time %> |
+				其他意見：<%= i.note %> |
+				填寫時間：<%= i.created_at %> |
+			<% end %>
+		</div>
+	</div>
+</div>

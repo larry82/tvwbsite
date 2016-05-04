@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   	collection {get 'month'}
   	collection {get 'only'}
   	collection {get 'location'}
+  	collection {get 'mochi1006'}
   end
   resources :infos
 end
