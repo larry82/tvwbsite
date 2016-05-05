@@ -16,9 +16,11 @@ $red: #ff5252;
 }
 
 body{
-	font-size: 14px;
+	font-size: 16px !important;
 	letter-spacing: 1px;
-	font-family: Microsoft JhengHei;
+	font-family: Microsoft JhengHei !important;
+	color:#000000;
+	background-color: #f2f2f2 !important;
 }
 .no-padding{
 	padding:0 !important;
@@ -51,6 +53,11 @@ body{
 		}
 	}
 	
+}
+
+.location{
+	font-weight: 700;
+	font-size: 18px;
 }
 
 #title{
